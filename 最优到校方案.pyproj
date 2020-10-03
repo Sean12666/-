@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8d938421-5ce2-4653-8250-2e1bac910dd0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>最优到校方案.py</StartupFile>
+    <StartupFile>最优到校方案（现有数据）.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="actual data.csv" />
+    <Content Include="figure setting.json" />
+    <Content Include="planning data.csv">
+      <Publish>True</Publish>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="最优到校方案.py" />
+    <Compile Include="最优到校方案（现有数据）.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
